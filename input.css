@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Hamburger animation */
+
+.hamburger {
+    @apply flex flex-col justify-around items-center cursor-pointer
+}
+
+.hamburger-top,
+.hamburger-bottom {
+    @apply w-6 h-[2px] bg-zinc-900 rounded-full transition-all duration-300
+}
+
+.open .hamburger-top {
+    transform: translateY(7px) rotate(-45deg);
+}
+
+.open .hamburger-bottom {
+    transform: translateY(-5px) rotate(45deg);
+}

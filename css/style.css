@@ -620,16 +620,8 @@ video {
   right: 0px;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.top-8 {
-  top: 2rem;
 }
 
 .z-0 {
@@ -671,14 +663,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mt-11 {
-  margin-top: 2.75rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .mt-24 {
@@ -748,11 +732,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
 }
 
 .h-screen {
@@ -944,6 +923,11 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-yellow-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
+}
+
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity, 1));
@@ -957,16 +941,6 @@ video {
 .bg-zinc-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
-}
-
-.bg-yellow-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\/assets\/img\/bg-boost-mobile\.svg\'\)\] {
@@ -1062,6 +1036,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -1193,28 +1171,16 @@ video {
   transition-duration: 150ms;
 }
 
-.delay-75 {
-  transition-delay: 75ms;
-}
-
 .delay-100 {
   transition-delay: 100ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 /* Hamburger animation */
@@ -1270,10 +1236,6 @@ video {
 .hover\:text-zinc-800:hover {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity, 1));
-}
-
-.peer:hover ~ .peer-hover\:h-screen {
-  height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -1361,16 +1323,12 @@ video {
     padding-bottom: 4rem;
   }
 
-  .md\:pt-24 {
-    padding-top: 6rem;
-  }
-
-  .md\:pb-24 {
-    padding-bottom: 6rem;
-  }
-
   .md\:pb-32 {
     padding-bottom: 8rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:text-left {
@@ -1404,10 +1362,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:right-16 {
-    right: 4rem;
-  }
-
   .xl\:top-1\/2 {
     top: 50%;
   }

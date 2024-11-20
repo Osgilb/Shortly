@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="shortcut icon" href="./assets/brand/favicon.svg" type="image/x-icon">
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
-        <script src="./js/script.js"></script>
+        <script src="./js/script.js" defer></script>
         <title>Shortly</title>
     </head>
 
@@ -85,11 +85,11 @@
                 <!-- Form container -->
                 <div class="p-6 space-y-6">
                     <!-- Link input container -->
-                    <form action="#" class="flex flex-col md:flex-row gap-4 md:gap-2 -mt-24 p-10 bg-zinc-900 rounded-lg max-w-5xl mx-auto relative">
-                        <input type="text" placeholder="Shorten your link" class="h-14 rounded-lg text-lg text-center md:text-left px-6 md:flex-1">
+                    <form action="#" id="form" class="flex flex-col md:flex-row gap-4 md:gap-2 -mt-24 p-10 bg-zinc-900 rounded-lg max-w-5xl mx-auto relative">
+                        <input type="text" placeholder="Shorten your link" id="input" class="h-14 rounded-lg text-lg text-center md:text-left px-6 md:flex-1 border-2 border-red-4">
                         <button type="submit" class="px-6 md:px-8 h-14 flex items-center justify-center bg-white text-lg/relaxed md:text-xl/relaxed font-medium tracking-tight text-zinc-900 rounded-lg hover:bg-zinc-100">Shorten it</button>
                         <!-- Error message -->
-                        <div class="absolute left-10 bottom-3 text-red-400 text-[14px] font-medium">&nbsp;</div>
+                        <div id="error" class="absolute left-10 bottom-3 text-red-400 text-[14px] font-medium">&nbsp;</div>
                     </form>
                     <!-- First link container -->
                     <div class="max-w-5xl mx-auto bg-white rounded-lg drop-shadow-sm p-6 flex flex-col md:flex-row gap-4 justify-between items-center">
